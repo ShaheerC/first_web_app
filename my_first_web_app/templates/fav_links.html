@@ -7,11 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <h1>Welcome to the gallery</h1>
-    {% for url in gallery_images %}
-        <img src="{{ url }}" alt="a random placeholder image">
+    <h1>FAVOURITE LINK</h1>
+    <p>Check out my favourite site
+    {% for favourite in Favourites %}
+        <a href="https://www.google.ca">{{ favourite }}</a>
     {% endfor %}
-    
+    </p>
 </body>
 </html>
